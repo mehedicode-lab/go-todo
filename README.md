@@ -77,24 +77,21 @@ Before running the application, make sure you have the following installed on yo
    git clone https://github.com/mehedicode-lab/go-todo.git
    cd go-todo
    ```
-2. Install Dependencies
+2. **Install Dependencies**:
+   -  The project uses Go modules for dependency management. Run the following command to install the required dependencies:
+      ```bash
+      go mod tidy
+      ```
+  
+3. **Create .env file**:
+   - Inside the config/ directory, create an .env file with the following contents:
 
-The project uses Go modules for dependency management. Run the following command to install the required dependencies:
-
-```bash
-  go mod tidy
-```
-3. Create .env file:
-
-Inside the config/ directory, create an .env file with the following contents:
-
-4. Run the application:
-
-After the setup is complete, you can run the application using:
-```sh
-  go run cmd/main.go
-```
-The application will start the server on the specified port (default is 8080). The server will connect to the PostgreSQL database specified in the .env file.
+4. **Run the application**:
+   - After the setup is complete, you can run the application using:
+     ```sh
+     go run cmd/main.go
+     ```
+***The application will start the server on the specified port (default is 8080). The server will connect to the PostgreSQL database specified in the .env file.***
 
 ## API Endpoints
 
